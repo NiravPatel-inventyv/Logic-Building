@@ -1,6 +1,6 @@
 let x = prompt("Enter x :");
 let n = prompt("Enter n :");
-
+x= (x *3.14159)/180;
 let result = 0;
 let fact = 1;
 let i = 1;
