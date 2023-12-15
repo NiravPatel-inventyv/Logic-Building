@@ -111,6 +111,7 @@ li {
   position: relative;
   width: 100%;
   height: calc(100% - 35px);
+  transition: all .3s ease-in-out;
 }
 .tab-container {
   display: none;
@@ -120,7 +121,7 @@ li {
  height:100% ;
  border-bottom-left-radius: 16px;
  border-bottom-right-radius: 16px;
-  background-color:grey ;
+ background-color:grey ;
 }
 .tab-container {
   display: none;
@@ -139,7 +140,7 @@ li {
   margin-bottom: 10px;
   margin-left: 8px;
   margin-right: 8px;
-}
+  }
 
 .input-box:first-child{
 margin-top: 30px;
