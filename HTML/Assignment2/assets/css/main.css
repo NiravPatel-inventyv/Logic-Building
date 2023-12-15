@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  height: calc(100vh - 10px);
+  width: calc(100vw - 10px);
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* Add your styling for image cards here */
+.image-container {
+  width: calc(100% - 10px);
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 20px;
+  padding: 10px;
+}
+
+.image-card {
+   width: calc(33.33% - 20px); /* One-third width minus gap */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
