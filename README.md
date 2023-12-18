@@ -32,10 +32,9 @@ This repository contains a collection of JavaScript files covering various algor
 - **Task1.js**: Write a logic to invoke IIFE and handle promise also fetch numbers of images from result.
 
 + **Recursion**
-
-- **ques1.js**: Find nCr using recursion.
-- **ques2.js**: Store and display array elements using recursion.
-- **ques3.js**: program to find prime fibonacci number and also find the difference between them and sum of the difference .
+    - **ques1.js**: Find nCr using recursion.
+    - **ques2.js**: Store and display array elements using recursion.
+    - **ques3.js**: program to find prime fibonacci number and also find the difference between them and sum of the difference .
 
 ## Installation
 
