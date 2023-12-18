@@ -27,11 +27,11 @@ This repository contains a collection of JavaScript files covering various algor
 - **Assignment1**: Create a login and registration form with html and css which should toggle.
 - **Assignment2**: Create a dashboard which should show images which are fetched from javascript task.
 
-## JavaScript
+### JavaScript
 
 - **Task1.js**: Write a logic to invoke IIFE and handle promise also fetch numbers of images from result.
 
-### Recursion
++ **Recursion**
 
 - **ques1.js**: Find nCr using recursion.
 - **ques2.js**: Store and display array elements using recursion.
