@@ -6,7 +6,7 @@ This repository contains a collection of JavaScript files covering various algor
 
 ### Flowcharts
 
-- [Flowcharts](/flowcharts) - Explore flowcharts illustrating different processes and algorithms.
+- **Flowcharts** - Explore flowcharts illustrating different processes and algorithms.
 
 ### JavaScript Files for flowcharts
 
@@ -46,4 +46,4 @@ Contributions are welcome! Fork the repository, create a new branch, make change
 
 ## License
 
-This repository is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
+This repository is licensed under the MIT License. See the LICENSE file for details.
