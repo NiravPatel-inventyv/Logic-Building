@@ -39,7 +39,6 @@ This repository contains a collection of JavaScript files covering various algor
 
 - **Assignment1**: Create Crud App using HTTP/1.1 protocol
 - **Assignment2**: Create Crud App using HTTP/2 protocol
-- **Difference.txt**: Actual difference observed between both assignments
 
 
 ## Installation
