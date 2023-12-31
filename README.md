@@ -25,8 +25,7 @@ This repository contains a collection of JavaScript files covering various algor
 ### HTML
 
 - **Assignment1**: Create a login and registration form with html and css which should toggle.
-- **Assignment2**: Create a dashboard which should show images which are fetched from javascript task.
-
+- **Assignment2**: Create a dashboard which should show images which are fetched from javascript task1.
 ### JavaScript
 
 - **Task1.js**: Write a logic to invoke IIFE and handle promise also fetch numbers of images from result.
@@ -35,6 +34,13 @@ This repository contains a collection of JavaScript files covering various algor
     - **ques1.js**: Find nCr using recursion.
     - **ques2.js**: Store and display array elements using recursion.
     - **ques3.js**: program to find prime fibonacci number and also find the difference between them and sum of the difference .
+
+### HTTP Protocols
+
+- **Assignment1**: Create Crud App using HTTP/1.1 protocol
+- **Assignment2**: Create Crud App using HTTP/2 protocol
+- **Difference.txt**: Actual difference observed between both assignments
+
 
 ## Installation
 

@@ -1,9 +1,11 @@
+//  IIFE (Immediately invoke function expression) which will call Function2
 (() => {
   let arr1 = [1, 2, 3, 4, 5];
   let firstElement = arr1.shift();
   Function2(firstElement, ...arr1);
 })();
 
+//function 2 which will create promise and resolve only if it is greater than 30
 function Function2(fe, ...args) {
   let arr2 = [6, 7, 8, 9];
   arr2.unshift(fe);
@@ -13,7 +15,7 @@ function Function2(fe, ...args) {
     sum > 30 ? res(sum) : rej("sum is less than 30")
   });
 
-  
+// handling promise and if resolved fetch data 
   promise.then((item) => {
     fetch(`https://picsum.photos/v2/list?limit=${item}`)
     .then(res => res.json())

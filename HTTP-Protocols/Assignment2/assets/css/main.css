@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+ * {
+	 padding: 0;
+	 margin: 0;
+}
+ #main {
+	 height: calc(100vh - 10px);
+	 width: calc(100vw - 10px);
+	 border-radius: 10px;
+	 background-color: rgba(7, 7, 7, 0.772);
+	 margin: 5px;
+   display: flex;
+  }
+  .left{
+    height: 100%;
+    width: 50%;
+    position: relative;
+  }
+.left #reg{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left:50% ;
+  transform: translate(-50%,-50%);
+  background-color: rgb(40, 156, 234);
+  border-radius: 10px;
+}
+.head-text{
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+}
+.reg-box{
+  position: relative;
+  height: calc(100%-100px);
+}
+.reg-body{
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left:50% ;
+  transform: translate(-50%,-50%);
+}
+input[type="text"],input[type="email"]{
+  margin: 5px;
+  width: 300px;
+  height: 30px;
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.45;
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+.btn-container{
+  display: flex;
+width: 100%;
+}
+button{
+  margin: 2px;
+  padding: 10px;
+  width: autox;
+  margin: auto;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+  color: white;
+}
+.submit{
+background-color: #22bb33;
+}
+
+.update{
+  
+  background-color: #f0ad4e;
+}
+.delete{
+  
+  background-color: #bb2124;
+}
+.right{
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.table-container{
+  height: 80%;
+  width: 90%;
+  background-color: white;
+position: absolute;
+top: 50%;
+  left:50% ;
+  transform: translate(-50%,-50%);
+}
+table{
+  width: 100%;
+  text-align: center;
+}
+tr:first-child{
+  background-color: gray;
+  color: white;
+  height: 30px;
+  width: 100%;
+}
+th{
+  width: 20%;
+}
