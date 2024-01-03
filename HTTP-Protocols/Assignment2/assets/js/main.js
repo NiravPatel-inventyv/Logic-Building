@@ -17,7 +17,7 @@ table.innerHTML = `
 
 // Function to fetch data and display it in the table
 async function Display() {
-  const response = await fetch("http://localhost:4000/users");
+  const response = await fetch("https://localhost:3000/users");
   const data = await response.json();
 
   data.forEach((item, index) => {
@@ -48,7 +48,7 @@ async function handleSubmit(e) {
   e.preventDefault();
   const data = new FormData(e.target);
   const value = Object.fromEntries(data.entries());
-  const res = await fetch("http://localhost:4000/user", {
+  const res = await fetch("https://localhost:3000/users", {
     method: "POST",
     body: JSON.stringify(value),
     headers: {
@@ -63,7 +63,7 @@ async function handleSubmit(e) {
 
 // Function to edit data (GET, PUT request)
 async function editData(id) {
-  const response = await fetch(`http://localhost:4000/user/${id}`);
+  const response = await fetch(`https://localhost:3000/users/${id}`);
   const item = await response.json();
 
   // Populate input fields with data for editing
@@ -82,7 +82,10 @@ async function editData(id) {
     const data = new FormData(e.target);
     const value = Object.fromEntries(data.entries());
 
-    await fetch(`http://localhost:4000/user/${id}`, {
+    await fetch(`https://localhost:3000/users/${id}`, {
+      priority: {
+        weight: 32
+      },
       method: "PUT",
       body: JSON.stringify(value),
       headers: {
@@ -101,7 +104,7 @@ async function editData(id) {
 async function deleteData(id) {
   const confirmDelete = confirm("Are you sure you want to delete this item?");
   if (confirmDelete) {
-    await fetch(`http://localhost:4000/user/${id}`, {
+    await fetch(`https://localhost:3000/users/${id}`, {
       method: "DELETE",
     });
 

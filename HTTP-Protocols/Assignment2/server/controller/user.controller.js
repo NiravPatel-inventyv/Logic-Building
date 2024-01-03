@@ -47,14 +47,14 @@ const createUser = (req, res) => {
   writeDataToFile(allUsers);
 
   // Return the newly created user in the response
-  res.status(201).json(newUser);
+  res.code(201).send(newUser);
 };
 
 // Function to get all users
 const getAllUsers = (req, res) => {
   // Get all users from the file and send them in the response
   const users = readDataFromFile().users;
-  res.status(200).json(users);
+  res.code(200).send(users);
 };
 
 // Function to get a user by ID
@@ -63,11 +63,11 @@ const getUserById = (req, res) => {
   const user = readDataFromFile().users.find((u) => u.id === parseInt(userId));
 
   if (!user) {
-    return res.status(404).json({ message: 'User not found' });
+    return res.code(404).send({ message: 'User not found' });
   }
 
   // Return the found user in the response
-  res.status(200).json(user);
+  res.code(200).send(user);
 };
 
 // Function to update a user by ID
@@ -91,9 +91,9 @@ const updateUserById = (req, res) => {
     writeDataToFile(allUsers);
 
     // Return the updated user in the response
-    res.status(200).json(allUsers.users[userIndex]);
+    res.code(200).send(allUsers.users[userIndex]);
   } else {
-    res.status(404).json({ message: 'User not found' });
+    res.code(404).send({ message: 'User not found' });
   }
 };
 
@@ -110,9 +110,9 @@ const deleteUserById = (req, res) => {
     writeDataToFile(allUsers);
 
     // Respond with a success message
-    res.status(200).json({ message: 'User deleted successfully' });
+    res.code(200).send({ message: 'User deleted successfully' });
   } else {
-    res.status(404).json({ message: 'User not found' });
+    res.code(404).send({ message: 'User not found' });
   }
 };
 
