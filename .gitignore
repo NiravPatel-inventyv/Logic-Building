@@ -135,3 +135,5 @@ server.pem
 server.crt
 server.csr
 server.key
+#rust
+/target
