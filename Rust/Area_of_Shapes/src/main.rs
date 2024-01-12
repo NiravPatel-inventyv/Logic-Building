@@ -39,7 +39,9 @@ impl Rectangle {
 fn main() {
     let mut input = String::new();
     println!("Enter height and width separated by space");
-    io::stdin().read_line(&mut input).expect("failed to readline");
+    io::stdin()
+        .read_line(&mut input)
+        .expect("failed to readline");
 
     let numbers: Vec<f64> = input
         .split_whitespace()
