@@ -1,4 +1,4 @@
-use crate::basic_ops::dmas::TwoDigit; // Import the TwoDigit struct from the basic_ops module
+use basic_ops::dmas::TwoDigit; // Import the TwoDigit struct from the basic_ops module
 use std::io;
 
 // Import the basic_ops module (assuming it's defined in a separate file named basic_ops.rs)

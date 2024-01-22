@@ -1,72 +1,91 @@
 use serde::{Deserialize, Serialize};
 use std::fs;
 
-#[derive(Debug, Deserialize, Serialize)]
-struct EmployeeInfo {
+#[derive(Serialize, Deserialize, Debug)]
+enum Position {
+    #[serde(rename = "Software Developer")]
+    SoftwareDeveloper,
+    #[serde(rename = "Sr. Software Developer")]
+    SeniorDeveloper,
+    #[serde(rename = "Jr. Software Developer")]
+    JuniorDeveloper,
+    #[serde(rename = "Project Manager")]
+    ProjectManager,
+    #[serde(rename = "Team Lead")]
+    TeamLead,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct Employee {
     name: String,
-    age: Option<u8>,
+    age: i32,
     skills: Vec<String>,
-    position: Option<String>,
-    #[serde(rename(serialize = "experiance(y)", deserialize = "experiance(y)"))]
-    experience_in_years: Option<u8>,
+    position: Option<Position>,
+    #[serde(rename = "experiance(y)")]
+    experience: Option<i32>,
 }
 
 fn main() {
-    let employee_file = fs::read_to_string("./src/Employee.json");
-    match employee_file {
-        Ok(employee_file) => {
-            let data: Result<Vec<EmployeeInfo>, serde_json::Error> =
-                serde_json::from_str(&employee_file);
+    // let json_data=serde_json::to_string()
+    let employee_data = fs::read_to_string("./src/Employee.json");
+    match employee_data {
+        Ok(data) => {
+            let employee_data: Result<Vec<Employee>, serde_json::Error> =
+                serde_json::from_str(&data);
 
-            match data {
-                Ok(employee_data) => {
-                    let mut mid_rust = Vec::new();
-                    let mut jr_java = Vec::new();
-                    let mut sr_or_c = Vec::new();
-                    
-                    for i in 0..employee_data.len() {
-                        let emp_data = EmployeeInfo {
-                            name: employee_data[i].name.clone(),
-                            age: employee_data[i].age,
-                            skills: employee_data[i].skills.clone(),
-                            position: employee_data[i].position.clone(),
-                            experience_in_years: employee_data[i].experience_in_years,
-                        };
-                        if employee_data[i].position == Some("Software Developer".to_string())
-                            && employee_data[i].skills.contains(&"Rust".to_string())
-                        {
-                            mid_rust.push(emp_data);
-                        } else if employee_data[i].position
-                            == Some("Jr. Software Developer".to_string())
-                            && employee_data[i].skills.contains(&"Java".to_string())
-                        {
-                            jr_java.push(emp_data)
-                        } else if employee_data[i].position
-                            == Some("Sr. Software Developer".to_string())
-                            || employee_data[i].skills.contains(&"C#".to_string())
-                        {
-                            sr_or_c.push(emp_data)
+            match employee_data {
+                Ok(data) => {
+                    let mut mid_and_rust: Vec<Employee> = vec![];
+                    let mut jr_and_java: Vec<Employee> = vec![];
+                    let mut sr_or_c: Vec<Employee> = vec![];
+                    for curr_employee in data {
+                        match curr_employee.position {
+                            Some(Position::SoftwareDeveloper)
+                                if curr_employee.skills.contains(&String::from("Rust")) =>
+                            {
+                                mid_and_rust.push(curr_employee)
+                            }
+                            Some(Position::JuniorDeveloper)
+                                if curr_employee.skills.contains(&String::from("Java")) =>
+                            {
+                                jr_and_java.push(curr_employee)
+                            }
+                            Some(Position::SeniorDeveloper)
+                                if curr_employee.skills.contains(&String::from("C#")) =>
+                            {
+                                sr_or_c.push(curr_employee)
+                            }
+                            _ => {
+                                if curr_employee.skills.contains(&String::from("C#")) {
+                                    sr_or_c.push(curr_employee)
+                                }
+                            }
                         }
                     }
-
-                    let mid_rust_data =
-                        serde_json::to_string_pretty(&mid_rust).expect("Failed to convert");
-                    let jr_java_data =
-                        serde_json::to_string_pretty(&jr_java).expect("Failed to convert");
-                    let sr_or_c_data =
-                        serde_json::to_string_pretty(&sr_or_c).expect("Failed to convert");
-                    fs::write("./src/data/MidRust_Dev.json", &mid_rust_data)
-                        .expect("Failed to write file");
-                    fs::write("./src/data/JrJava_Dev.json", &jr_java_data)
-                        .expect("Failed to write file");
-                    fs::write("./src/data/Sr_C#_Dev.json", &sr_or_c_data)
-                        .expect("Failed to write file");
+                    fs::write(
+                        "./src/data/mid_rust.json",
+                        serde_json::to_string_pretty(&mid_and_rust).expect("msg"),
+                    )
+                    .expect("msg");
+                    println!("mid_rust.json created successfully");
+                    fs::write(
+                        "./src/data/jr_java.json",
+                        serde_json::to_string_pretty(&jr_and_java).expect("msg"),
+                    )
+                    .expect("msg");
+                    println!("jr_java.json created successfully");
+                    fs::write(
+                        "./src/data/sr_or_c.json",
+                        serde_json::to_string_pretty(&sr_or_c).expect("msg"),
+                    )
+                    .expect("msg");
+                    println!("sr_or_c.json created successfully");
                 }
-                Err(_) => {}
+
+                _ => (),
             }
         }
-        Err(err) => {
-            println!("Error occured , failed to read file.");
-        }
-    }
+
+        Err(_) => (),
+    };
 }

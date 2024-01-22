@@ -15,8 +15,8 @@ struct Student {
 impl Student {
     fn calculate_percentage(&mut self) {
         let mut total_marks = 0.0;
-        for marks in &self.marks {
-            total_marks += *marks as f32;
+        for i in 0..self.marks.len() {
+            total_marks += self.marks[i] as f32;
         }
        self.percentage = Some(total_marks / self.marks.len() as f32);
     }
@@ -41,13 +41,13 @@ fn main() {
     match file_data {
         Ok(data) => {
             let mut struct_data: Vec<Student> = serde_json::from_str(&data).unwrap();
-            for student_data in &mut struct_data {
-                student_data.calculate_percentage();
-                student_data.calculate_grade();
+            for i in 0..struct_data.len() {
+                struct_data[i].calculate_percentage();
+                struct_data[i].calculate_grade();
             }
             let updated_json =
                 serde_json::to_string_pretty(&struct_data).expect("Failed to serialize data");
-            fs::write("./src/updated_data.json", &updated_json)
+            fs::write("D:/Work/Rust/students/src/updated_data.json", &updated_json)
                 .expect("failed to write file");
         }
         Err(_) => {
