@@ -1,10 +1,6 @@
 [
   {
-    "name": "Aarav Patel",
-    "email": "aarav.patel@example.com",
-    "phone": "+91 9876543210",
     "city": "Mumbai",
-    "address": "123, ABC Street, XYZ Colony",
     "marks": [
       85,
       92,
@@ -12,15 +8,19 @@
       90,
       88
     ],
-    "percentage": 86.6,
-    "grade": "B"
+    "percentage": 86,
+    "email": "aarav.patel@example.com",
+    "grade": "B",
+    "address": "123, ABC Street, XYZ Colony",
+    "name": "Aarav Patel",
+    "phone": "+91 9876543210"
   },
   {
-    "name": "Sanya Sharma",
     "email": "sanya.sharma@example.com",
-    "phone": "+91 8765432109",
     "city": "Delhi",
     "address": "456, PQR Street, LMN Colony",
+    "name": "Sanya Sharma",
+    "phone": "+91 8765432109",
     "marks": [
       75,
       80,
@@ -28,15 +28,12 @@
       79,
       95
     ],
-    "percentage": 83.4,
+    "percentage": 83,
     "grade": "B"
   },
   {
-    "name": "Arjun Gupta",
-    "email": "arjun.gupta@example.com",
-    "phone": "+91 7456123980",
-    "city": "Bangalore",
     "address": "789, DEF Street, GHI Colony",
+    "percentage": 88,
     "marks": [
       92,
       89,
@@ -44,13 +41,16 @@
       87,
       80
     ],
-    "percentage": 88.4,
-    "grade": "B"
+    "city": "Bangalore",
+    "email": "arjun.gupta@example.com",
+    "name": "Arjun Gupta",
+    "grade": "B",
+    "phone": "+91 7456123980"
   },
   {
-    "name": "Neha Verma",
-    "email": "neha.verma@example.com",
     "phone": "+91 9123456780",
+    "percentage": 86,
+    "email": "neha.verma@example.com",
     "city": "Kolkata",
     "address": "1011, JKL Street, MNO Colony",
     "marks": [
@@ -60,15 +60,14 @@
       92,
       88
     ],
-    "percentage": 86.6,
-    "grade": "B"
+    "grade": "B",
+    "name": "Neha Verma"
   },
   {
+    "phone": "+91 8309765412",
     "name": "Rahul Kumar",
     "email": "rahul.kumar@example.com",
-    "phone": "+91 8309765412",
-    "city": "Chennai",
-    "address": "1213, PQR Street, STU Colony",
+    "grade": "B",
     "marks": [
       85,
       88,
@@ -76,31 +75,27 @@
       91,
       94
     ],
-    "percentage": 86.8,
-    "grade": "B"
+    "address": "1213, PQR Street, STU Colony",
+    "city": "Chennai",
+    "percentage": 86
   },
   {
-    "name": "Aisha Singh",
-    "email": "aisha.singh@example.com",
+    "grade": "B",
     "phone": "+91 7890123456",
-    "city": "Hyderabad",
     "address": "1415, UVW Street, XYZ Colony",
+    "name": "Aisha Singh",
+    "city": "Hyderabad",
+    "percentage": 86,
+    "email": "aisha.singh@example.com",
     "marks": [
       90,
       92,
       85,
       78,
       88
-    ],
-    "percentage": 86.6,
-    "grade": "B"
+    ]
   },
   {
-    "name": "Vikram Yadav",
-    "email": "vikram.yadav@example.com",
-    "phone": "+91 9876501234",
-    "city": "Pune",
-    "address": "1617, GHI Street, JKL Colony",
     "marks": [
       85,
       80,
@@ -108,14 +103,21 @@
       79,
       95
     ],
-    "percentage": 85.4,
-    "grade": "B"
+    "email": "vikram.yadav@example.com",
+    "address": "1617, GHI Street, JKL Colony",
+    "grade": "B",
+    "phone": "+91 9876501234",
+    "city": "Pune",
+    "name": "Vikram Yadav",
+    "percentage": 85
   },
   {
-    "name": "Anaya Mishra",
     "email": "anaya.mishra@example.com",
     "phone": "+91 7012345678",
+    "name": "Anaya Mishra",
     "city": "Jaipur",
+    "grade": "B",
+    "percentage": 88,
     "address": "1819, MNO Street, PQR Colony",
     "marks": [
       92,
@@ -123,16 +125,14 @@
       94,
       87,
       80
-    ],
-    "percentage": 88.4,
-    "grade": "B"
+    ]
   },
   {
+    "city": "Lucknow",
     "name": "Aryan Singh",
     "email": "aryan.singh@example.com",
-    "phone": "+91 9123456789",
-    "city": "Lucknow",
     "address": "2021, STU Street, UVW Colony",
+    "grade": "B",
     "marks": [
       78,
       85,
@@ -140,15 +140,10 @@
       92,
       88
     ],
-    "percentage": 86.6,
-    "grade": "B"
+    "phone": "+91 9123456789",
+    "percentage": 86
   },
   {
-    "name": "Ishita Sharma",
-    "email": "ishita.sharma@example.com",
-    "phone": "+91 9876543211",
-    "city": "Ahmedabad",
-    "address": "2223, XYZ Street, ABC Colony",
     "marks": [
       85,
       88,
@@ -156,7 +151,12 @@
       91,
       94
     ],
-    "percentage": 86.8,
-    "grade": "B"
+    "email": "ishita.sharma@example.com",
+    "phone": "+91 9876543211",
+    "name": "Ishita Sharma",
+    "city": "Ahmedabad",
+    "grade": "B",
+    "address": "2223, XYZ Street, ABC Colony",
+    "percentage": 86
   }
 ]

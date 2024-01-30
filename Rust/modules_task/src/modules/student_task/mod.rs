@@ -4,25 +4,6 @@ use std::fs;
 /// Reads student data from a JSON file, calculates percentage and grade for each student,
 /// and updates the data in a new JSON file.
 ///
-/// # Examples
-///
-/// ```rust
-/// use modules_task::students;
-///
-/// let success = students();
-/// if success {
-///     println!("Student data updated successfully.");
-/// } else {
-///     println!("Failed to update student data.");
-/// }
-/// ```
-///
-/// This example demonstrates how to use the `students` function to read student data from
-/// a JSON file, perform calculations, and update the data in a new JSON file.
-///
-/// # Returns
-///
-/// Returns `true` if the student data is successfully updated; otherwise, returns `false`.
 pub fn students() -> bool {
     let path = "./src/data/StudentData.json";
     let file_data = fs::read_to_string(path);

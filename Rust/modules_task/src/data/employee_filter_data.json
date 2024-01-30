@@ -1,0 +1,178 @@
+{
+  "sr_or_c#": {
+    "employee 1": {
+      "name": "Aarav",
+      "age": 25,
+      "skills": [
+        "Java",
+        "C#"
+      ],
+      "position": "Sr. Software Developer",
+      "experiance(y)": 5
+    },
+    "employee 4": {
+      "name": "Advait",
+      "age": 28,
+      "skills": [
+        "C#",
+        "Rust"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 12": {
+      "name": "Rohan",
+      "age": 28,
+      "skills": [
+        "Rust",
+        "C#"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 13": {
+      "name": "Aanya",
+      "age": 25,
+      "skills": [
+        "C#",
+        "Java"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 10": {
+      "name": "Kabir",
+      "age": 26,
+      "skills": [
+        "Python",
+        "C#"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 8": {
+      "name": "Vihaan",
+      "age": 28,
+      "skills": [
+        "Rust",
+        "C#"
+      ],
+      "position": "Team Lead",
+      "experiance(y)": null
+    },
+    "employee 14": {
+      "name": "Ritvik",
+      "age": 26,
+      "skills": [
+        "Java",
+        "C#"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 16": {
+      "name": "Reyansh",
+      "age": 28,
+      "skills": [
+        "C#",
+        "Java"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 5": {
+      "name": "Aisha",
+      "age": 25,
+      "skills": [
+        "Rust",
+        "C#"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 18": {
+      "name": "Virat",
+      "age": 26,
+      "skills": [
+        "C#",
+        "Java"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 17": {
+      "name": "Ishita",
+      "age": 25,
+      "skills": [
+        "C#",
+        "Python"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 19": {
+      "name": "Avani",
+      "age": 27,
+      "skills": [
+        "C#",
+        "Rust"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 7": {
+      "name": "Diya",
+      "age": 27,
+      "skills": [
+        "Python",
+        "C#"
+      ],
+      "position": null,
+      "experiance(y)": null
+    },
+    "employee 9": {
+      "name": "Ananya",
+      "age": 25,
+      "skills": [
+        "C#",
+        "Rust"
+      ],
+      "position": "Project Manager",
+      "experiance(y)": null
+    }
+  },
+  "mid_and_rust": {
+    "employee 6": {
+      "name": "Ishaan",
+      "age": 26,
+      "skills": [
+        "Rust",
+        "Java"
+      ],
+      "position": "Software Developer",
+      "experiance(y)": null
+    },
+    "employee 3": {
+      "name": "Arjun",
+      "age": 27,
+      "skills": [
+        "Rust",
+        "C#"
+      ],
+      "position": "Software Developer",
+      "experiance(y)": null
+    }
+  },
+  "jr_and_java": {
+    "employee 2": {
+      "name": "Saanvi",
+      "age": 26,
+      "skills": [
+        "Java",
+        "Rust"
+      ],
+      "position": "Jr. Software Developer",
+      "experiance(y)": 1
+    }
+  }
+}

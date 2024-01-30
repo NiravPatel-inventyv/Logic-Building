@@ -2,35 +2,20 @@
 //!
 //! This module provides functions to perform various tasks related to employees, students,
 //! and frequency analysis. The functions `call_employee_task`, `call_student_task`, and
-//! `call_frequency_task` can be used to execute specific tasks.
-//!
-//! # Examples
-//!
-//! ```rust
-//! use crate::modules::{call_employee_task, call_student_task, call_frequency_task};
-//!
-//! // Call employee-related task
-//! call_employee_task();
-//!
-//! // Call student-related task
-//! call_student_task();
-//!
-//! // Call frequency analysis task
-//! call_frequency_task();
-//! ```
-//!
-//! This example demonstrates how to use the functions provided by this module to perform
-//! tasks related to employees, students, and frequency analysis.
+//! `call_frequency_task` can be used to execute specific tasks..
 use self::{
-    employee_task::employee,
-    frequency_task::merged_task,
-    student_task::students,
+    employee_hashmap::employee_with_hashmap, employee_task::employee, frequency_task::merged_task,
+    student_hashmap::students_with_hashmap, student_task::students,
+    table_task_with_font_mapping::table_task_with_font_mapping,
 };
 
-pub mod frequency_task;
+pub mod employee_hashmap;
 pub mod employee_task;
+pub mod frequency_task;
 pub mod structures;
+pub mod student_hashmap;
 pub mod student_task;
+pub mod table_task_with_font_mapping;
 /// Calls the task related to updating student records.
 ///
 /// This function calls the `students` function to update student records based on certain
@@ -66,4 +51,30 @@ pub fn call_frequency_task() {
     // call_task1();
     // call_task2();
     merged_task();
+}
+
+/// This function calls the `students` function to update student records based on certain
+/// calculations, and it prints a success or failure message accordingly.
+pub fn call_student_hashmap_task() {
+    let res = students_with_hashmap();
+    if res {
+        println!("Students records updated succesfully!");
+    } else {
+        println!("Fail to update student records!");
+    }
+}
+
+/// this function calls the employee_hashset task
+pub fn call_employee_hashmap_task() {
+    let res = employee_with_hashmap();
+    if res {
+        println!("Employee records filtered succesfully!");
+    } else {
+        println!("Fail to filter employee records!");
+    }
+}
+
+/// this function calls the table_task_with_font_mapping
+pub fn call_table_task_with_font_mapping() {
+    table_task_with_font_mapping();
 }

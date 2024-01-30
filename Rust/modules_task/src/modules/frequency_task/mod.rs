@@ -1,6 +1,7 @@
 pub mod task1;
-pub mod task2;
-use self::{task1::split_string, task2::string_analyzer};
+
+pub mod task2_modified;
+use self::{task1::split_string, task2_modified::string_analyzer};
 /// This module provides functions to perform various tasks using the `task1` and `task2` submodules.
 /// function to call task 1
 pub fn call_task1() {
@@ -20,7 +21,7 @@ pub fn merged_task() {
     let result = replace_string(&mut task1_result, &mut task2_result.letter_count_vec);
     println!("orignal str  : \n \t\t {}", task1_result);
     println!("modified string will be : \n \t\t {}", result);
-    println!("modified vec will be : \n \t\t {:?}", task2_result);
+    // println!("modified vec will be : \n \t\t {:?}", task2_result);
 }
 
 /// Replaces underscores in a string with characters from a given letter count vector.
@@ -28,43 +29,42 @@ pub fn merged_task() {
 /// This function takes a string with underscores and a vector containing characters and
 /// their counts. It replaces each underscore in the input string with characters from the
 /// vector, ensuring that the counts are decremented appropriately.
-///
-/// # Arguments
-///
-/// * `input_str` - The input string with underscores to be modified.
-/// * `filling_vec` - A mutable reference to a vector containing characters and counts.
-///
-/// # Returns
-///
-/// Returns the modified string after replacing underscores.
 pub fn replace_string(input_str: &mut str, filling_vec: &mut Vec<(char, u8)>) -> String {
-    // iterator through all the chars
-    let mut iterator_through_letters = filling_vec.iter_mut();
+    let mut result_string = String::new();
+    let mut idx = 0;
 
-    // iterating through each char and replacing underscore
-    let replaced_result = input_str.chars().map(|c| {
-        // if block if char is inderscore
+    //looping through each char of string
+    for c in input_str.chars() {
+        //check if the char is underscore
         if c == '_' {
-            // replace undescore with char untill its presence in vector
-            if let Some(letter_count) = iterator_through_letters.next() {
-                if letter_count.1 > 0 {
-                    // decrease count of char
-                    letter_count.1 -= 1;
-                    letter_count.0
+            // if index is less then filling vector lenght then execute logic
+            if idx < filling_vec.len() {
+                let (letter, count) = &mut filling_vec[idx];
+
+                // Check if the count is greater than 0
+                if *count > 0 {
+                    // Decrease the count and add the letter to the result
+                    *count -= 1;
+                    result_string.push(*letter);
                 } else {
-                    // if count gets zero move to next char in vector
-                    return iterator_through_letters.next().map(|l| l.0).unwrap_or('_');
+                    // If count is zero, move to the next character in the vector
+                    idx += 1;
+                    let next_char = if idx < filling_vec.len() {
+                        filling_vec[idx].0
+                    } else {
+                        '_'
+                    };
+                    result_string.push(next_char);
                 }
             } else {
-                '_'
+                // If the filling vector is empty, add an underscore to the result
+                result_string.push('_');
             }
-
-            //if char is not underscore return the char
         } else {
-            c
+            // If the character is not an underscore, add it to the result
+            result_string.push(c);
         }
-    });
-    // collecting all the chars as string and return it to the function calling it
-    let result = replaced_result.collect();
-    result
+    }
+
+    result_string
 }
