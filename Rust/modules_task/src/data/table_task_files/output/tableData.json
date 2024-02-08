@@ -1,0 +1,335 @@
+{
+  "height": 408.0,
+  "page_width": 792.0,
+  "rows": [
+    {
+      "height": 72.0,
+      "cell_width": 48.25,
+      "cells": [
+        {
+          "content": "Descr\niption\n(Type\n)"
+        },
+        {
+          "content": "Date I\nn Svc"
+        },
+        {
+          "content": "Cost/ \nBasis"
+        },
+        {
+          "content": "Prior \n179 B\nonus"
+        },
+        {
+          "content": "Bus. \nUse P\ner."
+        },
+        {
+          "content": "Meth\nod"
+        },
+        {
+          "content": "Cv"
+        },
+        {
+          "content": "Life"
+        },
+        {
+          "content": "Crnt. \n179"
+        },
+        {
+          "content": "Crnt. \nBonus"
+        },
+        {
+          "content": "Prior \nReg. \nDepr."
+        },
+        {
+          "content": "Crnt. \nDepr. \nDedu\nc."
+        },
+        {
+          "content": "Next \nYear \nDepr."
+        },
+        {
+          "content": "Prior \nAMT"
+        },
+        {
+          "content": "Crnt. \nAMT"
+        },
+        {
+          "content": "Crnt. \nAmo. \nDep."
+        }
+      ]
+    },
+    {
+      "height": 96.0,
+      "cell_width": 48.25,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset1 - \nHouse In\n NY(Indi\nan Reser\nvation 5 \nyear non \nfarm pro\nperty"
+        },
+        {
+          "content": "01/01/20\n24"
+        },
+        {
+          "content": "250,000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "HY"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 96.0,
+      "cell_width": 48.25,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset2 - \nHouse In\n CA(Indi\nan Reser\nvation 10\n year far\nm prope\nrty)"
+        },
+        {
+          "content": "01/01/20\n22"
+        },
+        {
+          "content": "150000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "CA"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 48.0,
+      "cell_width": 48.25,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset3 - \nCar -For\nd(Car Pr\noperty)"
+        },
+        {
+          "content": "01/01/20\n19"
+        },
+        {
+          "content": "1000000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "ford"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 48.0,
+      "cell_width": 48.25,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset3 - \nCar -Au\ndi(Car P\nroperty)"
+        },
+        {
+          "content": "01/01/20\n17"
+        },
+        {
+          "content": "150000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "ford"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 48.0,
+      "cell_width": 48.25,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset3 - \nCar -BM\nW(Car P\nroperty)"
+        },
+        {
+          "content": "01/01/20\n15"
+        },
+        {
+          "content": "150000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "ford"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    }
+  ]
+}

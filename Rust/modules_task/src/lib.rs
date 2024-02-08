@@ -1,6 +1,7 @@
 use modules::{
     call_employee_hashmap_task, call_employee_task, call_frequency_task, call_student_hashmap_task,
-    call_student_task, call_table_task_with_font_mapping,
+    call_student_task, call_table_task_with_font_mapping, call_table_task_with_font_mapping2,
+    call_task_schedular, call_threads,
 };
 pub mod modules;
 
@@ -16,5 +17,7 @@ pub fn run() {
     // call_frequency_task();
     // call_employee_hashmap_task();
     // call_student_hashmap_task();
-    call_table_task_with_font_mapping();
+    // call_table_task_with_font_mapping2();
+    // call_threads();
+    call_task_schedular();
 }

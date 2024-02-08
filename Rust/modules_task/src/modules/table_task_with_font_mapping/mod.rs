@@ -67,7 +67,7 @@ impl Table {
         let mut lines = Vec::new();
 
         for char in content.chars() {
-            let char_width = calc_font_width(char,font_size);
+            let char_width = calc_font_width(char, font_size);
             if char_width <= remaining_width {
                 current_line.push(char);
                 remaining_width -= char_width;
@@ -148,10 +148,11 @@ pub fn table_task_with_font_mapping() {
         .get("title")
         .unwrap()
         .as_array()
-        .unwrap().iter()
+        .unwrap()
+        .iter()
         .map(|title| title.as_str().unwrap())
         .collect();
-   
+
     // extracting data_rows from object
     let data_rows = data_obj
         .get("dataRows")
