@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package users;
+
+service users{
+    rpc AddUser (UserRequest) returns (Response);
+    rpc GetUser (UserRequestId) returns (Response);
+    rpc UpdateUser (UserRequest) returns (Response);
+}
+
+
+message UserRequestId {
+    uint32 id = 1;
+}
+
+message UserRequest{
+UserRequestId id = 1;
+string data = 2;
+}
+
+message Response {
+    string key =1;
+    string messsage = 2;
+    string data = 3;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package employees;
+
+service employees{
+    rpc AddEmp (EmpRequest) returns (Response);
+    rpc GetEmp (EmpRequestId) returns (Response);
+    rpc UpdateEmp (EmpRequest) returns (Response);
+}
+
+
+message EmpRequestId {
+    uint32 id = 1;
+}
+message EmpRequest{
+EmpRequestId id = 1;
+string data = 2;
+}
+
+message Response {
+    string key =1;
+    string messsage = 2;
+    string data = 3;
+}

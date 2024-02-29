@@ -40,25 +40,15 @@ fn load_queues() {
     let skills = SKILLS.read().unwrap();
     let task_types = vec!["Call", "Chat"];
     let languages = vec!["English", "Spanish"];
-    let intervals = vec!["L1", "L2", "L3", "L4", "L5"];
+    let intervals = vec!["L5","L4","L3","L2","L1"];
     let mut queues = QUEUES.write().unwrap();
     let mut queues_priority = QUEUES_PRIORITY.write().unwrap();
+    for interval in &intervals {
     for skill in skills.deref() {
         for task_type in &task_types {
             for language in &languages {
-                for interval in &intervals {
                     let queue_name = format!("{}_{}_{}_{}", task_type, skill, language, interval);
-                    queues.insert(queue_name, VecDeque::new());
-                }
-            }
-        }
-    }
-    // Create queue priorities
-    for interval in intervals.iter().rev() {
-        for skill in skills.deref() {
-            for task_type in &task_types {
-                for language in &languages {
-                    let queue_name = format!("{}_{}_{}_{}", task_type, skill, language, interval);
+                    queues.insert(queue_name.clone(), VecDeque::new());
                     queues_priority.push(queue_name);
                 }
             }

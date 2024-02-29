@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 /// Represents the position or role of an employee.
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug,Clone)]
 pub enum Position {
     #[serde(rename = "Software Developer")]
     SoftwareDeveloper,
@@ -16,7 +16,7 @@ pub enum Position {
 }
 
 /// Represents an employee with personal details, skills, position, and experience.
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug,Clone)]
 pub struct Employee {
     /// The name of the employee.
     pub name: String,
@@ -32,7 +32,7 @@ pub struct Employee {
 }
 
 /// Represents a student with personal details, contact information, academic performance, and calculated metrics.
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize,Clone)]
 pub struct Student {
     /// The name of the student.
     pub name: String,

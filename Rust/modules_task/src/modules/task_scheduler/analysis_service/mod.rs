@@ -7,6 +7,7 @@ use std::{
 use super::shared_data::{Request, QUEUES};
 
 pub fn analysis_service() {
+
     thread::sleep(Duration::from_secs(30));
     if let Ok(mut queues) = QUEUES.write() {
         let mut escalated_data = HashMap::new();
@@ -15,7 +16,7 @@ pub fn analysis_service() {
             let mut new_queue_name: Option<String> = None;
             for each_req in queue_val.pop_front().into_iter() {
                 let time_elapsed = each_req.timestamp.elapsed().unwrap_or_default();
-                let mut escalation_level = 1;
+                let mut escalation_level ;
 
                 match time_elapsed.as_secs() {
                     0..=30 => escalation_level = 1,

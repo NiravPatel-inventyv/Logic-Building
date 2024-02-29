@@ -1,0 +1,36 @@
+[package]
+name = "axum_practices"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = "1.0.111"
+serde = { version = "1.0.195",features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+tower = { version = "0.4.13", features = ["full"] }
+config = "0.14"
+axum = "0.7.4"
+hyper = "1.1.0"
+tower-http = { version = "0.5.1", features = ["cors","trace"] }
+tracing-subscriber = "0.3.16"
+lazy_static = "1.4.0"
+uuid = {version = "1.7", features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+]}
+
+tikv-client = "0.3"
+rand = "0.8.5"
+tonic = "0.11.0"
+prost = "0.12.3"
+tonic-reflection = "0.11.0"
+futures = "0.3.30"
+axum_csrf = "0.9.0"
+
+[dev-dependencies]
+anyhow = "1.0.80"
+futures-util = "0.3.30"
+
+

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package students;
+
+service students{
+    rpc AddStudent (StudentRequest) returns (Response);
+    rpc GetStudent (StudentRequestId) returns (Response);
+    rpc UpdateStudent (StudentRequest) returns (Response);
+}
+
+
+message StudentRequestId {
+    uint32 id = 1;
+}
+message StudentRequest{
+StudentRequestId id = 1;
+string data = 2;
+}
+
+message Response {
+    string key =1;
+    string messsage = 2;
+    string data = 3;
+}

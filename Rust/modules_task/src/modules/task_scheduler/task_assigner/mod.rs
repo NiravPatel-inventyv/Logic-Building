@@ -1,3 +1,4 @@
+
 use std::{collections::VecDeque, ops::Deref, sync::Arc, thread, time::Duration};
 
 use super::shared_data::{Request, Status, QUEUES, QUEUES_PRIORITY, SKILLS, USERS};
@@ -18,6 +19,7 @@ pub fn task_assigner_service() {
     };
 }
 pub fn task_assigner(tasks: &mut VecDeque<Request>) {
+    
     let user_ref = Arc::clone(&USERS);
     for request in tasks.pop_front().into_iter() {
         if let Ok(mut users) = user_ref.write() {

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "6a413de6-e72f-11eb-88d2-0242ac130003",
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  },
+  {
+    "id": "6a413e9c-e72f-11eb-88d2-0242ac130003",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com"
+  },
+  {
+    "id": "6a413f5c-e72f-11eb-88d2-0242ac130003",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com"
+  },
+  {
+    "id": "6a41401a-e72f-11eb-88d2-0242ac130003",
+    "name": "Bob Williams",
+    "email": "bob.williams@example.com"
+  },
+  {
+    "id": "6a4140d6-e72f-11eb-88d2-0242ac130003",
+    "name": "Emily Brown",
+    "email": "emily.brown@example.com"
+  }
+]

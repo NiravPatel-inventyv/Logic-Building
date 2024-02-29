@@ -1,0 +1,7 @@
+{
+    "couchbase":{
+        "username":"dev58",
+        "pass":"dev@963",
+        "connectionurl":"couchbase:4000/mydb"
+    }
+}

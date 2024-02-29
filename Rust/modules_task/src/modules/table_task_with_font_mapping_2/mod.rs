@@ -8,42 +8,43 @@ pub fn table_task_with_font_mapping_2() {
     // reading json file to string
     match fs::read_to_string("./src/data/table_task_files/data.json") {
         Ok(str_data) => {
-            let deserialized_data: Result<Data, serde_json::Error> =
-                serde_json::from_str(&str_data);
-            match deserialized_data {
-                Ok(data) => {
-                    let page_width = data.page_width as f32;
-                    let header_row_items = data.header_row;
-                    let data_rows_items = data.data_row;
-                    let cell_width = page_width / header_row_items.title.len() as f32;
-                    let header_row = insert_header_row(header_row_items, cell_width);
-                    let mut data_rows: Vec<Row> = insert_data_rows(data_rows_items, cell_width);
-                    let mut rows: Vec<Row> = Vec::new();
-                    rows.push(header_row);
-                    rows.append(&mut data_rows);
-                    let table = Table::new(rows, page_width);
-                    let opt_file = serde_json::to_string_pretty(&table);
-                    match opt_file {
-                        Ok(opt_file) => {
-                            match fs::write(
-                                "./src/data/table_task_files/output/tableData.json",
-                                &opt_file,
-                            ) {
-                                Ok(_) => {
-                                    println!("Table printed succesfully");
-                                }
-                                Err(_) => {
-                                    println!("Error while printing table!!");
-                                }
-                            }
-                        }
-                        Err(_) => {}
-                    }
-                }
-                Err(_) => {
-                    println!("failed to deserialize data")
-                }
-            }
+            println!("{:?}",str_data);
+            // let deserialized_data: Result<Data, serde_json::Error> =
+            //     serde_json::from_str(&str_data);
+        //     match deserialized_data {
+        //         Ok(data) => {
+        //             let page_width = data.page_width as f32;
+        //             let header_row_items = data.header_row;
+        //             let data_rows_items = data.data_row;
+        //             let cell_width = page_width / header_row_items.title.len() as f32;
+        //             let header_row = insert_header_row(header_row_items, cell_width);
+        //             let mut data_rows: Vec<Row> = insert_data_rows(data_rows_items, cell_width);
+        //             let mut rows: Vec<Row> = Vec::new();
+        //             rows.push(header_row);
+        //             rows.append(&mut data_rows);
+        //             let table = Table::new(rows, page_width);
+        //             let opt_file = serde_json::to_string_pretty(&table);
+        //             match opt_file {
+        //                 Ok(opt_file) => {
+        //                     match fs::write(
+        //                         "./src/data/table_task_files/output/tableData.json",
+        //                         &opt_file,
+        //                     ) {
+        //                         Ok(_) => {
+        //                             println!("Table printed succesfully");
+        //                         }
+        //                         Err(_) => {
+        //                             println!("Error while printing table!!");
+        //                         }
+        //                     }
+        //                 }
+        //                 Err(_) => {}
+        //             }
+        //         }
+        //         Err(_) => {
+        //             println!("failed to deserialize data")
+        //         }
+        //     }
         }
         Err(_) => {
             println!("failed to read data")

@@ -1,0 +1,21 @@
+as_slice => &s[..]
+as_slice_mut => &mut s[..]
+insert => (index,value)
+remove => (index)
+retain => filter like operation but doesnt create new vec , takes closure as argument 
+retain_mut => same as above if want to modify data 
+push
+pop
+append => concat two vectors by passing mutable reference
+drain => remove range of elements 
+clear
+len
+is_empty
+split_off => split vec into two from given index 
+resize_with => (size,value_to_fill or closure) increase or decrease size 
+extend_from_slice => clones and appends all elements in a slice to the Vec
+extend_from_within => (range) Copies elements from src range to the end of the vector
+into_flattened =>flat nested vec
+dedup=> remove consicutive duplicates also can remove all duplicates if vec is sorted
+splice => (range,value_to_be_replace) 
+ 

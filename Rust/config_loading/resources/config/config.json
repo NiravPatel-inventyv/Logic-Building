@@ -1,0 +1,7 @@
+{
+    "couchbase":{
+        "username":"administrator",
+        "pass":"default@789",
+        "connectionurl":"127.0.0.1:5000"
+    }
+}

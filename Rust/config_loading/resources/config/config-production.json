@@ -1,0 +1,7 @@
+{
+    "couchbase":{
+        "username":"prod",
+        "pass":"prod@4258",
+        "connectionurl":"192.168.20.1:3000"
+    }
+}

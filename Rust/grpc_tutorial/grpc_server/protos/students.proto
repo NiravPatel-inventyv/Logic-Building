@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package students;
+
+service students{
+    rpc AddStudent (StudentRequest) returns (Response);
+    rpc GetStudent (StudentRequestId) returns (Response);
+    rpc RemoveStudent (StudentRequestId) returns (Response);
+    rpc UpdateStudent (StudentRequest) returns (Response);
+    rpc ScanStudent (ScanRequest) returns (ScanResponse);
+}
+
+
+message StudentRequestId {
+    uint32 id = 1;
+}
+message StudentRequest {
+    uint32 id = 1;
+    string name = 2;
+    string email = 3;
+    string phone = 4;
+    string city = 5;
+    string address = 6;
+    repeated uint32 marks = 7;
+    float percentage = 8;
+    string grade = 9;
+}
+
+message ScanRequest {
+    string start = 1;
+    string end = 2;
+    uint32 batch = 3;
+    bool onlykeys = 4;
+
+}
+
+
+message ScanResponse {
+    uint32 key =1;
+    string messsage = 2;
+    repeated string data = 3;
+}
+message Response {
+    uint32 key =1;
+    string messsage = 2;
+    string data = 3;
+}

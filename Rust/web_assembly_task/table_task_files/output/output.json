@@ -1,0 +1,336 @@
+{
+  "height": 512.0,
+  "page_width": 792.0,
+  "rows": [
+    {
+      "height": 82.0,
+      "cell_width": 49.5,
+      "rowType": "HeaderRow",
+      "cells": [
+        {
+          "content": "Descr\niption\n(Type\n)"
+        },
+        {
+          "content": "Date \nIn Sv\nc"
+        },
+        {
+          "content": "Cost/ \nBasis"
+        },
+        {
+          "content": "Prior \n179 B\nonus"
+        },
+        {
+          "content": "Bus. \nUse P\ner."
+        },
+        {
+          "content": "Meth\nod"
+        },
+        {
+          "content": "Cv"
+        },
+        {
+          "content": "Life"
+        },
+        {
+          "content": "Crnt.\n 179"
+        },
+        {
+          "content": "Crnt.\n Bon\nus"
+        },
+        {
+          "content": "Prior \nReg. \nDepr."
+        },
+        {
+          "content": "Crnt.\n Depr\n. Ded\nuc."
+        },
+        {
+          "content": "Next \nYear \nDepr."
+        },
+        {
+          "content": "Prior \nAMT"
+        },
+        {
+          "content": "Crnt.\n AM\nT"
+        },
+        {
+          "content": "Crnt.\n Amo\n. Dep."
+        }
+      ]
+    },
+    {
+      "height": 114.0,
+      "cell_width": 49.5,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset1 - \nHouse I\nn NY(In\ndian Res\nervation\n 5 year n\non farm \nproperty"
+        },
+        {
+          "content": "01/01/20\n24"
+        },
+        {
+          "content": "250,000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "HY"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 114.0,
+      "cell_width": 49.5,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset2 - \nHouse I\nn CA(In\ndian Res\nervation\n 10 year \nfarm pr\noperty)"
+        },
+        {
+          "content": "01/01/20\n22"
+        },
+        {
+          "content": "150000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "CA"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 72.0,
+      "cell_width": 49.5,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset3 - \nCar -Fo\nrd(Car \nPropert\ny)"
+        },
+        {
+          "content": "01/01/20\n19"
+        },
+        {
+          "content": "1000000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "ford"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 58.0,
+      "cell_width": 49.5,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset3 - \nCar -Au\ndi(Car P\nroperty)"
+        },
+        {
+          "content": "01/01/20\n17"
+        },
+        {
+          "content": "150000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "ford"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "height": 72.0,
+      "cell_width": 49.5,
+      "rowType": "DataRow",
+      "cells": [
+        {
+          "content": "Asset3 - \nCar -B\nMW(Ca\nr Proper\nty)"
+        },
+        {
+          "content": "01/01/20\n15"
+        },
+        {
+          "content": "150000"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "100 MA\nCRS 150"
+        },
+        {
+          "content": "ford"
+        },
+        {
+          "content": "3"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        },
+        {
+          "content": "0"
+        }
+      ]
+    }
+  ]
+}

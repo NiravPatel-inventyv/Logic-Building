@@ -17,7 +17,7 @@ pub fn run() {
     // call_frequency_task();
     // call_employee_hashmap_task();
     // call_student_hashmap_task();
-    // call_table_task_with_font_mapping2();
+    call_table_task_with_font_mapping2();
     // call_threads();
-    call_task_schedular();
+    // call_task_schedular();
 }
